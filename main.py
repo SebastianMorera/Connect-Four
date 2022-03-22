@@ -119,7 +119,7 @@ def ConnectFour():
 
                         if winning_move(board, 1):
                             pygame.draw.rect(screen, BLACK, (0, 0, WIDTH, SQUARE_SIZE))
-                            label = myFont.render("Player 1 wins!!", 1, RED)
+                            label = myFont.render("Player 1 wins!!", True, RED)
                             screen.blit(label, (40, 10))
                             game_over = True
 
@@ -134,7 +134,7 @@ def ConnectFour():
 
                     if winning_move(board, 2):
                         pygame.draw.rect(screen, BLACK, (0, 0, WIDTH, SQUARE_SIZE))
-                        label = myFont.render("Player 2 wins!!", 1, YELLOW)
+                        label = myFont.render("Player 2 wins!!", True, YELLOW)
                         screen.blit(label, (40, 10))
                         game_over = True
 
